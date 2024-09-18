@@ -1,8 +1,8 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { JwtService } from '@nestjs/jwt';
 
-import { UsersService } from 'src/modules/users/users.service';
-import { compareHashedText, hashText } from 'src/shared/helpers';
+import { UsersService } from '@/modules/users/users.service';
+import { compareHashedText, hashText } from '@/shared/helpers';
 import { LoginDto, RegisterDto } from './dto';
 import { User } from '../users/schemas';
 

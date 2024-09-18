@@ -1,9 +1,9 @@
 import { Controller, Get, Post, Body, Param, Delete, Put, HttpCode, HttpStatus, UseGuards } from '@nestjs/common';
 import { CustomersService } from './customers.service';
 import { CreateCustomerDto, UpdateCustomerDto } from './dto';
-import { ParseMongoIdPipe } from 'src/shared/pipes/parse-mongo.pipe';
+import { ParseMongoIdPipe } from '@/shared/pipes/parse-mongo.pipe';
 import { ApiBearerAuth, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { JwtAuthGuard, RolesGuard } from 'src/modules/auth/guards';
+import { JwtAuthGuard, RolesGuard } from '@/modules/auth/guards';
 import { UserRoleEnum } from '../auth/enums';
 import { Roles } from '../auth/decorators/role.decorator';
 

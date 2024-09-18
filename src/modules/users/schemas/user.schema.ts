@@ -1,6 +1,6 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
 import { Document, SchemaTypes } from "mongoose";
-import { UserRoleEnum } from "src/modules/auth/enums";
+import { UserRoleEnum } from "@/modules/auth/enums";
 
 const opts = {
   timestamps: {
